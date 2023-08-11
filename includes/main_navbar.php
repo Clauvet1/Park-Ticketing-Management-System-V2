@@ -12,9 +12,9 @@
               
               <ul>
                   <li><a href="index.php" class="text-decoration-none h4 text-white">Dashboard</a><img src="images/arrow.png" class="nav-arrow"></li>
-                  <li><a href="manageTickets.php" class="text-decoration-none h5 text-white">Manage Ticket</a><img src="images/arrow.png" class="nav-arrow"></li>
-                  <li><a href="normalTickets.php" class="text-decoration-none h5 text-white">Normal Ticket</a><img src="images/arrow.png" class="nav-arrow"></li>
-                  <li><a href="foreignerTickets.php" class="text-decoration-none h5 text-white">Foreigner Ticket</a><img src="images/arrow.png" class="nav-arrow"></li>
+                  <li><a href="manage_ticket.php" class="text-decoration-none h5 text-white">Manage Ticket</a><img src="images/arrow.png" class="nav-arrow"></li>
+                  <li><a href="normal_ticket.php" class="text-decoration-none h5 text-white">Normal Ticket</a><img src="images/arrow.png" class="nav-arrow"></li>
+                  <li><a href="foreigner_ticket.php" class="text-decoration-none h5 text-white">Foreigner Ticket</a><img src="images/arrow.png" class="nav-arrow"></li>
                   <li><a href="report.php" class="text-decoration-none h5 text-white">Reports</a><img src="images/arrow.png" class="nav-arrow"></li>
               </ul>
             </nav>

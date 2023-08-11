@@ -16,12 +16,12 @@
     <?php include'includes/main_navbar.php'; ?>
     <?php include'includes/sub_navbar.php'; ?>
   </div>
-  <div class="bg-secondary col-lg-9 col-md-8">
+  <div class="colll col-lg-9 col-md-8">
       <div class="bg_top">
         <h3 class="text-center">WELCOME ...</h3>
       </div>
       <div class="content">
-        <h1 class="text-white">Park Ticketing System</h>
+        <h1 class="hs text-white my-4">Park Ticketing System</h>
         <hr>
         <h3>Dashboard</h3>
         <div class="container">

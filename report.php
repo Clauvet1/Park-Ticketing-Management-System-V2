@@ -12,16 +12,16 @@
 <body>
   <div class="main">
     <div class="row">
-      <div class="col-lg-2">
+      <div class="coll col-lg-3 col-md-4">
     <?php include'includes/main_navbar.php'; ?>
     <?php include'includes/sub_navbar.php'; ?>
   </div>
-  <div class="col-lg-10">
+  <div class="colll col-lg-9 col-md-8">
       <div class="bg_top">
-        <h3>WELCOME ...</h3>
+        <h3 class="text-center">Weekly Report</h3>
       </div>
       <div class="content">
-        <h2>Park Ticketing System</h2>
+        <h1 class="hs text-white my-4">Park Ticketing System</h>
         <hr>
         <h3>Dashboard</h3>
         <div class="container">
