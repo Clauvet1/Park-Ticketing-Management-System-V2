@@ -1,14 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Park Ticket Management System</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="bootstrap/js/bootstrap.min.js">
-</head>
+<?php include'includes/header.php';
+  if(!isset($_SESSION['user_id'])){ 
+    echo"
+    <script>
+        alert('You are not loggedIn');
+        window.location.href='signIn.php';
+    </script>
+  ";
+  }else{
+   ?>
+
 <body>
   <div class="main">
     <div class="row">
@@ -21,77 +21,10 @@
         <h3 class="text-center">Weekly Report</h3>
       </div>
       <div class="content">
-        <h1 class="hs text-white my-4">Park Ticketing System</h>
-        <hr>
-        <h3>Dashboard</h3>
-        <div class="container">
-        <div class="row">
-          <div class="col-lg-3">
-            <div class="box">
-              <div class="box_content p-2">
-                <div class="data">
-                <p>50</p>
-                <p>Total &numero; <br>Foreigners Today</p>
-                </div>
-                <div class="image">
-                  <img class="IMG1" src="images/booking.png" alt="">
-                </div>
-              </div>
-              <div class="box_bottom text-center">
-                <p>More Info <img class="IMG" src="images/arrow.png" alt=""></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="box">
-              <div class="box_content p-2">
-                <div class="data">
-                <p>50</p>
-                <p>Total &numero; <br>Foreigners Today</p>
-                </div>
-                <div class="image">
-                  <img class="IMG1" src="images/packing.jpg" alt="">
-                </div>
-              </div>
-              <div class="box_bottom text-center">
-                <p>More Info <img class="IMG" src="images/arrow.png" alt=""></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="box">
-              <div class="box_content p-2">
-                <div class="data">
-                <p>50</p>
-                <p>Total &numero; <br>Foreigners Today</p>
-                </div>
-                <div class="image">
-                  <img class="IMG1" src="images/car-icon.jpg" alt="">
-                </div>
-              </div>
-              <div class="box_bottom text-center">
-                <p>More Info <img class="IMG" src="images/arrow.png" alt=""></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="box">
-              <div class="box_content p-2">
-                <div class="data">
-                <p>50</p>
-                <p>Total &numero; <br>Foreigners Today</p>
-                </div>
-                <div class="image">
-                  <img class="IMG1" src="images/download (1).png" alt="">
-                </div>
-              </div>
-              <div class="box_bottom text-center">
-                <p>More Info <img class="IMG" src="images/arrow.png" alt=""></p>
-              </div>
-            </div>
-          </div>
+        <div class="date">
+        <h1 class="year">2023...</h1>
         </div>
-        </div>
+      
         
       </div>
     </div>
@@ -101,3 +34,4 @@
   <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
+<?php } ?>
