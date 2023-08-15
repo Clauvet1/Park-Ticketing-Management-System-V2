@@ -144,19 +144,26 @@ input{
 .year{
     font-size: 16em;
     text-align: center;
-    color: white;
-    text-shadow: 4px 4px 10px black;
+    color: rgb(4, 3, 55);
+    text-shadow: 4px 4px 10px rgba(2, 1, 39, 0.775);
 }
 .date{
     width: 100%;
     background-color: white;
     border-radius: 1em 0 0 1em;
     margin-top: 2em;
-    background:linear-gradient(rgb(192, 194, 247), rgb(255, 255, 255));
+    background:linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
 
 }
 .display-report{
     font-size: 1.2em;
+}
+.full{
+    margin: 4em 0;
+}
+.no{
+    text-decoration: none;
+    color: black;
 }
 span{
     font-size: xxx-large;

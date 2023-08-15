@@ -6,12 +6,9 @@
 
       <div class="collapse navbar-collapse" id="navbarsExample01">
 
-      <form role="search" method="POST" class="my-4">
-          <input class="form-control" name="search" type="search" placeholder="Search" aria-label="Search">
-          <button name="submit" class="btn btn-outline-success my-1" type="submit">Search</button>
-        </form>
+   
         
-        <ul class="navbar-nav me-auto mb-2">
+        <ul class="navbar-nav me-auto mb-2 mt-4">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="index.php">Home</a>
           </li>

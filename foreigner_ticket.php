@@ -109,7 +109,7 @@
                         </div>
                     </div>
                     <hr>
-                   <center><button type="submit" class="save mx-5 px-3 btn btn-outline-success"  name="submit">PRINT</button></center>
+                   <center><button type="submit" class="save mx-5 px-3 btn btn-outline-success"  name="submit">SAVE</button></center>
                 </div>
             </form>
         </div>

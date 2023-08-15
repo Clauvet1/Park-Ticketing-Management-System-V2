@@ -33,24 +33,44 @@
           $sql = "SELECT * FROM foreigner_ticket;";
           $result = mysqli_query($conn, $sql);
           $rowcount = mysqli_num_rows($result);
-
-          $sql1 = "SELECT * FROM normal_ticket;";
-          $result1 = mysqli_query($conn, $sql1);
+          $foreigner_adults_count = 0;
+          $foreigner_child_count = 0;
+          $foreigner_total_cost = 0;
+          if($rowcount > 0){
+            while($row = mysqli_fetch_assoc($result)){
+            $foreigner_adults = $row['num_of_adults'];
+            $foreigner_child = $row['num_of_children'];
+            $foreigner_total = $row['total_cost'];
+            $foreigner_adults_count += $foreigner_adults;
+            $foreigner_child_count += $foreigner_child;
+            $foreigner_total_cost += $foreigner_total;
+            }
+          }
+          $sql = "SELECT * FROM normal_ticket;";
+          $result1 = mysqli_query($conn, $sql);
           $rowcount1 = mysqli_num_rows($result1);
-
-          $total = $rowcount + $rowcount1;
+          $citizen_total_cost = 0;
+          $citizen_adults_count = 0;
+          $citizen_child_count = 0;
+          if($rowcount1 > 0){
+            while($row = mysqli_fetch_assoc($result1)){
+            $citizen_adults = $row['num_of_adults'];
+            $citizen_child = $row['num_of_children'];
+            $citizen_total = $row['total_cost'];
+            $citizen_total_cost += $citizen_total;
+            $citizen_adults_count += $citizen_adults;
+            $citizen_child_count += $citizen_child;
+            }
+          }
+          $total = $citizen_adults + $citizen_child + $foreigner_adults_count + $foreigner_child_count;
           
-          $sql = "SELECT* FROM manage_ticket WHERE nationality = 'foreigner';";
-           $result = mysqli_query($conn, $sql);
-           if(mysqli_num_rows($result) > 0){
-                while($row = mysqli_fetch_assoc($result)){
-                  
+      
 
-                }}
+            $total_price = $citizen_total_cost + $foreigner_total_cost;
           ?>
 
             <h1 class="display-report mx-2"><span class=""><?= $total?></span> <br> Tickets Solds</h1><hr>
-            <h1 class="display-report"><span></span><br> has been made so far</h1>
+            <h1 class="display-report"><span><?= $total_price?></span>FCFA<br> has been made so far this month</h1>
           </div>
           <div class="col-lg-9">
             <div class="IMG3">
